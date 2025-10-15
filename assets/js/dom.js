@@ -8,3 +8,4 @@ function powerPc() {
 }
 
 const boutons = document.querySelectorAll(".power-btn")
+
