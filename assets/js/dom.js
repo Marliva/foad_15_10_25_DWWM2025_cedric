@@ -53,3 +53,13 @@ function afficherResultat(resultat, joueur, ordinateur) {
   zoneResultat.classList.remove("win", "lose", "draw")
   zoneResultat.classList.add(resultat.type)
 }
+
+boutons.forEach((bouton) => {
+  bouton.addEventListener("click", function () {
+    const choixJoueur = powerPlayer(this)
+    const choixOrdinateur = powerPc()
+    const resultat = playGame(choixJoueur, choixOrdinateur)
+
+    afficherResultat(resultat, choixJoueur, choixOrdinateur)
+  })
+})
