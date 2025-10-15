@@ -2,7 +2,7 @@
 .game-container {
   background: rgb(148, 148, 148);
   border-radius: 1rem;
-  padding: 2.5rem;
+  padding: 2rem;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   max-width: 600px;
   width: 100%;
@@ -12,16 +12,16 @@
 h1 {
   text-align: center;
   color: #4f00b6;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
   font-size: 2.5em;
 }
 
 /* Section des règles */
 .rules {
   background: #000000;
-  padding: 20px;
+  padding: 1rem;
   border-radius: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 1rem;
 }
 
 .rules h2 {
@@ -37,8 +37,8 @@ h1 {
 }
 
 .rules li {
-  padding: 0.5rem 0;
-  font-size: 1.1rem;
+  padding: 0.2rem 0;
+  font-size: 1rem;
   color: #ffffff;
   font-weight: 600;
 }
@@ -47,8 +47,8 @@ h1 {
 .buttons-container h3 {
   text-align: center;
   color: #660ead;
-  margin-bottom: 1.2rem;
-  font-size: 1.3em;
+  margin-bottom: 1rem;
+  font-size: 1.2em;
 }
 
 .buttons {
@@ -62,7 +62,7 @@ h1 {
 .power-btn {
   min-width: 120px;
   padding: 1.2rem;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 800;
   border: none;
   border-radius: 1rem;
@@ -105,13 +105,25 @@ h1 {
   box-shadow: 0 6px 20px rgba(56, 176, 0, 0.4);
 }
 
+/* Style pour les boutons désactivés */
+.power-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+.power-btn:disabled:hover {
+  transform: none !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+}
+
 /* Zone de résultat */
 .result {
-  margin-top: 1.8rem;
-  padding: 1.2rem;
+  margin-top: 1.2rem;
+  padding: 1rem;
   border-radius: 0.7rem;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 700;
   min-height: 60px;
   display: flex;
@@ -139,6 +151,78 @@ h1 {
   color: #856404;
   border: 2px solid #ffeaa7;
 }
+
+/* Zone d'affichage des choix */
+.choices {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Style scores */
+.score-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 1rem;
+  padding: 0.2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.score-box {
+  text-align: center;
+  color: white;
+}
+
+.score-box h3 {
+  font-size: 1.1em;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.score {
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.score-separator {
+  font-size: 2.5em;
+  color: white;
+  font-weight: bold;
+  opacity: 0.7;
+  margin-top: 2rem;
+}
+
+/* Bouton rejouer */
+.btn-rejouer {
+  display: block;
+  margin: 30px auto 0;
+  padding: 15px 40px;
+  font-size: 1.2em;
+  font-weight: bold;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-rejouer:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.btn-rejouer:active {
+  transform: translateY(0);
+}
+
 
 /* Responsive pour petits écrans */
 @media (max-width: 600px) {

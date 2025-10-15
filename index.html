@@ -20,14 +20,15 @@
 <body>
     <div class="game-container">
         <h1>Jeu Feu-Eau-Terre</h1>
-        
+
         <div class="rules">
             <h2>Règles du jeu :</h2>
             <ul>
                 <li><i class="fa-solid fa-fire-flame-curved" style="color: #e82626;"></i> Le Feu bat la Terre</li>
                 <li><i class="fa-solid fa-droplet" style="color: #74C0FC;"></i> L'Eau bat le Feu</li>
                 <li><i class="fa-solid fa-gem" style="color: #e0e0e0;"></i> La Terre bat l'Eau</li>
-                <li><i class="fa-solid fa-face-grin-stars" style="color: #FFD43B;"></i> Le premier qui arrive à 10 points gagne la partie !</li>
+                <li><i class="fa-solid fa-face-grin-stars" style="color: #FFD43B;"></i> Le premier qui arrive à 10
+                    points gagne la partie !</li>
             </ul>
         </div>
 
@@ -49,11 +50,11 @@
                 <button id="btn-feu" class="power-btn fire" data-power="feu">
                     <i class="fa-solid fa-fire-flame-curved" style="color: #e82626;"></i> Feu
                 </button>
-                
+
                 <button id="btn-eau" class="power-btn water" data-power="eau">
                     <i class="fa-solid fa-droplet" style="color: #74C0FC;"></i> Eau
                 </button>
-                
+
                 <button id="btn-terre" class="power-btn earth" data-power="terre">
                     <i class="fa-solid fa-gem" style="color: #e0e0e0;"></i> Terre
                 </button>
@@ -61,10 +62,15 @@
         </div>
 
         <div id="result" class="result"></div>
-        
+
         <div id="choices" class="choices"></div>
+
+        <button id="btn-rejouer" class="btn-rejouer" style="display: none;">
+            Rejouer une partie
+        </button>
     </div>
 
     <script src="./assets/js/dom.js"></script>
 </body>
+
 </html>
