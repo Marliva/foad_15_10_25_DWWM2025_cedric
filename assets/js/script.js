@@ -6,3 +6,5 @@ function powerPc() {
   console.log("Choix de l'ordinateur:", choixOrdinateur)
   return choixOrdinateur
 }
+
+const boutons = document.querySelectorAll(".power-btn")
