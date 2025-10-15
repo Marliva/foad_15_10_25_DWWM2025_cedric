@@ -1,7 +1,11 @@
 # index.html
 
 ## Description
-Projet web créé avec le générateur automatique de structure.
+Proposition d'une variante du célèbre jeu Pierre-Feuille-Ciseaux, avec des éléments. 
+Le joueur choisira parmi trois propositions : Feu, Eau, Terre. 
+Il cliquera sur le bouton de l'élément choisi.
+L'ordinateur fera également un choix aléatoire.
+Le résultat de la manche s'affichera d'après les règles indiquées en-haut de l'encadré du jeu.
 
 ## Structure du projet
 ```
