@@ -1,1 +1,160 @@
- 
+ /* Conteneur principal du jeu */
+.game-container {
+  background: rgb(148, 148, 148);
+  border-radius: 1rem;
+  padding: 2.5rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Titre du jeu */
+h1 {
+  text-align: center;
+  color: #4f00b6;
+  margin-bottom: 2.5rem;
+  font-size: 2.5em;
+}
+
+/* Section des règles */
+.rules {
+  background: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.rules h2 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.rules ul {
+  list-style: none;
+}
+
+.rules li {
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Section des boutons */
+.buttons-container h3 {
+  text-align: center;
+  color: #660ead;
+  margin-bottom: 1.2rem;
+  font-size: 1.3em;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Style des boutons de pouvoir */
+.power-btn {
+  min-width: 120px;
+  padding: 1.2rem;
+  font-size: 1.2em;
+  font-weight: 800;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Bouton Feu */
+.power-btn.fire {
+  background: linear-gradient(135deg, #ffdc3e, #ee5a24);
+}
+
+.power-btn.fire:hover {
+  background: linear-gradient(135deg, #ee5a24, #ffdc3e);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(238, 90, 36, 0.4);
+}
+
+/* Bouton Eau */
+.power-btn.water {
+  background: linear-gradient(135deg, #001e5f, #003bfe);
+}
+
+.power-btn.water:hover {
+  background: linear-gradient(135deg, #003bfe, #001e5f);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(79, 172, 254, 0.4);
+}
+
+/* Bouton Terre */
+.power-btn.earth {
+  background: linear-gradient(135deg, #5c3f00, #b46c00);
+}
+
+.power-btn.earth:hover {
+  background: linear-gradient(135deg, #b46c00, #5c3f00);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(56, 176, 0, 0.4);
+}
+
+/* Zone de résultat */
+.result {
+  margin-top: 1.8rem;
+  padding: 1.2rem;
+  border-radius: 0.7rem;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Victoire */
+.result.win {
+  background: #b8e9c4;
+  color: #155724;
+  border: 2px solid #c3e6cb;
+}
+
+/* Défaite */
+.result.lose {
+  background: #f8d7da;
+  color: #721c24;
+  border: 2px solid #f5c6cb;
+}
+
+/* Egalité */
+.result.draw {
+  background: #ffedb2;
+  color: #856404;
+  border: 2px solid #ffeaa7;
+}
+
+/* Responsive pour petits écrans */
+@media (max-width: 600px) {
+  .game-container {
+    padding: 1.2rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .power-btn {
+    min-width: 100%;
+  }
+}
